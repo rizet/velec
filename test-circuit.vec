@@ -1,0 +1,11 @@
+# set power voltage
+power 5v
+
+# define circuit elements
+define power-regulator resistor 10000
+define status led
+
+# wire up elements
+connect power power-regulator
+connect power-regulator status
+connect status ground
